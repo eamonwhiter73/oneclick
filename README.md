@@ -1,2 +1,4 @@
 oneclick
 ========
+
+Run npm install.
