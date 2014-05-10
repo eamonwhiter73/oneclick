@@ -1,0 +1,8 @@
+<div ng-include="'partials/navbar'"></div>
+
+<div class="wrapper">
+  <div ng-hide="currentUser"><h4>Please Log in!</h4></div>
+  <div ng-click="clickedit()" class="jumbotron" ng-show="currentUser" ng-class="{active: isActive('/game')}"><a href="/game">Games</a></div>
+  <div ng-click="clickedit()" class="jumbotron" ng-show="currentUser" ng-class="{active: isActive('/leaderboard')}"><a href="/leaderboard">Leaderboards</a></div>
+  <div ng-click="clickedit()" class="jumbotron" ng-show="currentUser" ng-class="{active: isActive('/store')}"><a href="/store">Store</a></div>
+</div>
